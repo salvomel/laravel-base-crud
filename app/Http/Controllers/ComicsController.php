@@ -63,11 +63,7 @@ class ComicsController extends Controller
     {
         $comic = Comic::findOrFail($id);
 
-        $data = [
-            'comic' => $comic
-        ];
-
-        return view('comics.show', $data);
+        return view('comics.show', compact('comic'));
     }
 
     /**
@@ -78,7 +74,9 @@ class ComicsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+
+        return view('comics.edit', compact('comic'));
     }
 
     /**
@@ -90,7 +88,15 @@ class ComicsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $form_data = $request->all();
+
+        // Richiamo funzione per validazioni
+        $request->validate($this->getValidationRules());
+
+        $comic_to_update = Comic::findOrFail($id);
+        $comic_to_update->update($form_data);
+
+        return redirect()->route('comics.show', ['comic' => $comic_to_update->id]);
     }
 
     /**

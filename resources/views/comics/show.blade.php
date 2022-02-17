@@ -11,15 +11,17 @@
         </div>
         <div class="card-body card-wrapper">
             
-            <img src="{{ $comic->thumb }}" class="card-img-top" alt="{{ $comic->title }}">
-            <div>
+          <img src="{{ $comic->thumb }}" class="card-img-top" alt="{{ $comic->title }}">
+          <div>
               <h5 class="card-title">{{ $comic->title }}</h5>
               <div>Price: {{ $comic->price }} €</div>
               <div>Series: {{ $comic->series }}</div>
               <div>Type: {{ $comic->type }}</div>
               <p class="card-text">Description: {{ $comic->description }}</p>
-            </div>
-            
+              <div>
+                <a class="btn btn-primary" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Edit</a>
+              </div>
+          </div>
         </div>
         <div class="card-footer text-muted">
             <div>Sale Date: {{ $comic->sale_date }}</div>
