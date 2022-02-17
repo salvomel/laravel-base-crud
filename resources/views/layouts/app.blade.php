@@ -13,10 +13,11 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
+              <div class="navbar-brand">The Comics Watcher</div>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" href="{{ route('comics.index') }}">Back to Comics List</a>
-                  <a class="nav-link" href="{{ route('comics.create') }}">Create Comics</a>
+                  <a class="nav-link" href="{{ route('comics.index') }}">Comics List</a>
+                  <a class="nav-link" href="{{ route('comics.create') }}">Create New Comics</a>
                 </div>
               </div>
             </div>

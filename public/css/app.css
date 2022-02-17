@@ -12173,3 +12173,42 @@ fieldset:disabled .btn {
   }
 }
 
+header {
+  font-weight: 600;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .home-wrapper {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .home-wrapper .my-card {
+  width: 40%;
+  margin: 10px;
+}
+
+main .details-container {
+  margin: 30px 0;
+}
+
+main .details-container .card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+main .details-container .card-wrapper img {
+  width: 300px;
+  margin-right: 20px;
+}
+
+main .details-container .card-wrapper p {
+  margin: 10px 0;
+}
+
+main .create {
+  margin: 30px 0;
+}
+

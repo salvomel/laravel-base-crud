@@ -1,0 +1,35 @@
+main {
+    .home-wrapper {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .my-card {
+            width: 40%;
+            margin: 10px;
+        }
+    }
+
+    .details-container {
+        margin: 30px 0;
+        
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+    
+            img {
+                width: 300px;
+                margin-right: 20px;
+            }
+    
+            p {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .create {
+        margin: 30px 0;
+    }
+}
