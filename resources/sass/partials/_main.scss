@@ -27,6 +27,14 @@ main {
                 margin: 10px 0;
             }
         }
+
+        .buttons {
+            display: flex;
+
+            a {
+                margin-right: 10px;
+            }
+        }
     }
 
     .create {

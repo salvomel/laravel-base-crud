@@ -12208,6 +12208,14 @@ main .details-container .card-wrapper p {
   margin: 10px 0;
 }
 
+main .details-container .buttons {
+  display: flex;
+}
+
+main .details-container .buttons a {
+  margin-right: 10px;
+}
+
 main .create {
   margin: 30px 0;
 }
